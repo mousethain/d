@@ -12,14 +12,14 @@ clear
 apt install jq curl -y
 function subdomainsshweb() {
 #SUB=microsoft.azure
-#DOMAIN=ganteng.tech DOMAIN=yaddykakkoii.my.id #DOMAIN=sshweb.tech
-echo "DOMAIN UTAMA ADALAH sshweb.tech"
+#DOMAIN=mousevpn.site DOMAIN=mousevpn.site #DOMAIN=mousevpn.site
+echo "DOMAIN UTAMA ADALAH mousevpn.site"
 echo "~~~~~~ petunjuk tentang custom subdomain ~~~~~~~~~"
-echo "JIKA KAMU INPUT KATA: test ,maka hasilnya adalah test.sshweb.tech"
-echo "JIKA KAMU INPUT KATA: custom ,maka hasilnya adalah custom.sshweb.tech"
-echo "JIKA KAMU INPUT KATA: ainzoverlord ,maka hasilnya adalah ainzoverlord.sshweb.tech"
-echo "JIKA KAMU INPUT KATA: sg3 ,maka hasilnya adalah sg3.sshweb.tech"
-echo "JIKA KAMU INPUT KATA: memekpink ,maka hasilnya adalah memekpink.sshweb.tech"
+echo "JIKA KAMU INPUT KATA: test ,maka hasilnya adalah test.mousevpn.site"
+echo "JIKA KAMU INPUT KATA: custom ,maka hasilnya adalah custom.mousevpn.site"
+echo "JIKA KAMU INPUT KATA: ainzoverlord ,maka hasilnya adalah ainzoverlord.mousevpn.site"
+echo "JIKA KAMU INPUT KATA: sg3 ,maka hasilnya adalah sg3.mousevpn.site"
+echo "JIKA KAMU INPUT KATA: memekpink ,maka hasilnya adalah memekpink.mousevpn.site"
 echo ""
 read -rp "silakan INPUT custom subdomain kamu : " -e SUB
 echo ""
@@ -31,7 +31,7 @@ SUB_DOMAIN=${SUB}.${DOMAIN}
 NS_DOMAIN=ns.${SUB_DOMAIN}
 echo "DOMAIN kamu adalah : ${SUB_DOMAIN}"
 sleep 3
-echo "IP=${SUB_DOMAIN}" > /var/lib/yaddykakkoii/ipvps.conf
+echo "IP=${SUB_DOMAIN}" > /var/lib/mousevpn/ipvps.conf
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS RECORD (DomainNameSystem) for ${SUB_DOMAIN} "
@@ -90,15 +90,15 @@ cd
 function randomsubdomain() {
 #SUB=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 MYIP=$(wget -qO- icanhazip.com);
-CF_ID=yadicakepp@gmail.com
+CF_ID=mousethain@gmail.com
 CF_KEY=b22d286c2d7f6d3e5073325dd18b76ca4ddb2
 SUB=$(</dev/urandom tr -dc a-z0-9 | head -c3)
-DOMAIN=yaddykakkoii.my.id
+DOMAIN=mousevpn.site
 SUB_DOMAIN=tensai.${SUB}.${DOMAIN}
 NS_DOMAIN=ns.${SUB_DOMAIN}
 echo "DOMAIN kamu adalah : ${SUB_DOMAIN}"
 sleep 3
-echo "IP=${SUB_DOMAIN}" > /var/lib/yaddykakkoii/ipvps.conf
+echo "IP=${SUB_DOMAIN}" > /var/lib/mousevpn/ipvps.conf
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 # update domain vps mu
@@ -186,7 +186,7 @@ echo ""
             randomsubdomain
         else
 	        echo "$domainmu" > /etc/xray/domain
-            echo "IP=$domainmu" > /var/lib/yaddykakkoii/ipvps.conf
+            echo "IP=$domainmu" > /var/lib/mousevpn/ipvps.conf
         fi
         clear
     elif [[ $host == "2" ]]; then
