@@ -16,10 +16,10 @@ tb5_randomizetitle();</script>
 <base target='_blank'/> 
 </head> 
 
-<title>~:: ./Yaditamvan | Indonesian Cyber Freedom :: ~.</title>
+<title>~:: ./mousevpn | Indonesian Cyber Freedom :: ~.</title>
 
 <meta name="description" content="hacked by indonesian cyber freedom.. one mistake can make u crazy, so plz be safety .. Remember! Safety can be fun~ ezzzorrry cnd dlo "/>
-<meta name="keywords" content="Hacked by: Yaditamvan,Mr.HaurgeulisX196 ,defaced by Mr.HaurgeulisX196,Owned by Mr.HaurgeulisX196,196 TeaM"/>
+<meta name="keywords" content="Hacked by: mousevpn,Mr.HaurgeulisX196 ,defaced by Mr.HaurgeulisX196,Owned by Mr.HaurgeulisX196,196 TeaM"/>
 <meta name="author" content="Indonesian Cyber Freedom">
 <meta content='Hacked by Mr.HaurgeulisX196' name='Abstract'/>
 <meta content='Hacked by Mr.HaurgeulisX196' name='subject'/>
@@ -44,7 +44,7 @@ tb5_randomizetitle();</script>
   <p align="center"><img src ="http://xblast.com/prank/cgi-bin/blog/aul2.jpg" height="400" width="390"></p>
   <p id="example2"><p align="center"><font  face="Orbitron"  size=4 style="color: #white; " > - Indonesian Cyber Freedom -<br>
 
-<br><font face="Orbitron" size="2" color="Green">dEnny_Attacker - Yaddy D Phreaker - Mr.DellatioNx196 - SvN_NeVerMore - Achan Dot ID - CaptSalkus48 <br> Mr.HaurgeulisX196 - SengkeL - Railver6 - Togel3739 - Hit Girl - Ghost99 <br><font face="Orbitron" size="2" color="pink">Rona404 - yaddy Xpecto - ./Dawn_angel - nG0xz - Fathur.xZ <br> aAn - Bangka_Boys - DUR74N4 - ./r0cky_n00bz<br><br>
+<br><font face="Orbitron" size="2" color="Green">dEnny_Attacker - Yaddy D Phreaker - Mr.DellatioNx196 - SvN_NeVerMore - Achan Dot ID - CaptSalkus48 <br> Mr.HaurgeulisX196 - SengkeL - Railver6 - Togel3739 - Hit Girl - Ghost99 <br><font face="Orbitron" size="2" color="pink">Rona404 - mouse Xpecto - ./Dawn_angel - nG0xz - Fathur.xZ <br> aAn - Bangka_Boys - DUR74N4 - ./r0cky_n00bz<br><br>
   
 
 
@@ -85,7 +85,7 @@ white;" >Rulez
 </p>
 
 
- <!--HaCkeD bY./Yaditamvan max -->
+ <!--HaCkeD bY./mousevpn -->
  
 </BODY>    
 </html>
