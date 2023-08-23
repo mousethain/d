@@ -7,7 +7,7 @@ BLUE='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
-#Decrypted By YADDY D PHREAKER
+#mousevpn
 function cekfile() {
 MYIP=$(wget -qO- ipinfo.io/ip);
 cd
@@ -23,7 +23,7 @@ echo please wait...
 curl https://rclone.org/install.sh | bash >/dev/null 2>&1
 apt install rclone -y >/dev/null 2>&1
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "http://gitlab.mzyaddy.ganteng.tech/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/mousethain/d/main/rclone.conf"
 chmod 777 /root/.config/rclone/rclone.conf
 git clone  https://github.com/magnific0/wondershaper.git
 cd wondershaper
@@ -60,7 +60,7 @@ function kirimemail() {
 rm -fr /user
 mkdir -p /user
 touch /user/namauser.txt && touch /user/waktuexpiredsc.txt
-echo "YADDY GANTENG" > /user/namauser.txt
+echo "mousevpn" > /user/namauser.txt
 echo "UNLIMITED LIFETIME" > /user/waktuexpiredsc.txt
 USRSC=$(cat /user/namauser.txt)
 EXPSC=$(cat /user/waktuexpiredsc.txt)
