@@ -1,7 +1,7 @@
 #!/bin/bash
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
-###########- MZ YADDY GANTENG-#########
+###########- mousevpn -#########
 if [ -f "/usr/bin/mpstat" ]; then
     #echo ada file binari tsb
     clear
@@ -31,7 +31,7 @@ export RED="\033[0;31m"
 export COLOR1="$(cat /etc/mousevpn/tema/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
 export COLBG1="$(cat /etc/mousevpn/tema/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
 WH='\033[1;37m'                   
-###########- Yaddy Kakkoii-##########
+###########- mousevpn -##########
 tram=$( free -h | awk 'NR==2 {print $2}' )
 uram=$( free -h | awk 'NR==2 {print $3}' )
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
@@ -41,8 +41,8 @@ export GREEN='\033[0;32m'
 # status
 #echo "$date" > /root/status
 #rm -f /root/status
-statushariini=$( curl -sS https://gitlab.mzyaddy.ganteng.tech/statushariini)
-#wget -q -O /root/status "https://raw.githubusercontent.com/YaddyKakkoii/sclifetime/main/statushariini"
+statushariini=$( curl -sS https://raw.githubusercontent.com/moisethain/d/main/statushariini)
+#wget -q -O /root/status "https://raw.githubusercontent.com/moisethain/d/main/statushariini"
 # usage
 vnstat_profile=$(vnstat | sed -n '3p' | awk '{print $1}' | grep -o '[^:]*')
 vnstat -i ${vnstat_profile} >/root/t1
@@ -160,7 +160,7 @@ upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
 uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
 cekup=`uptime -p | grep -ow "day"`
 IPVPS=$(curl -s ipinfo.io/ip )
-serverVersion=$( curl -sS https://gitlab.mzyaddy.ganteng.tech/update/versinew)
+serverVersion=$( curl -sS https://raw.githubusercontent.com/moisethain/d/main/versinew)
 #echo -e "$COLOR1 $NC ${WH}Public Key     ${COLOR1}: ${WH}$(cat /etc/slowdns/server.pub)"
 uis="${COLOR1}Premium Version$NC"
 echo -e "$COLOR1 $NC ${WH}User Roles     ${COLOR1}: ${WH}$uis"
@@ -215,9 +215,9 @@ else
 fi
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐$NC"
 echo -e "$COLOR1 $NC ${WH}Version     ${COLOR1}:${WH} $(cat /opt/.ver) Latest Version${NC}"
-echo -e "$COLOR1 $NC ${WH}Client Name ${COLOR1}: ${WH}MZ YADDY GANTENG 💯 ${NC}"
+echo -e "$COLOR1 $NC ${WH}Client Name ${COLOR1}: ${WH}mousevpn ${NC}"
 echo -e "$COLOR1 $NC ${WH}License     ${COLOR1}: ${WH}LifeTime 😁 ${NC}"
-echo -e "$COLOR1 $NC ${WH}Developer   ${COLOR1}: ${WH}Yaddy D phreaker ${NC}"
+echo -e "$COLOR1 $NC ${WH}Developer   ${COLOR1}: ${WH}mousevpn ${NC}"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘$NC"
 echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC}             ${WH}• MZ YADDY KAKKOII 2027 •${NC}                 $COLOR1 $NC"
