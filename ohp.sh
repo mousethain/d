@@ -14,12 +14,12 @@ Port_OpenVPN_TCP='1194';
 Port_Squid='3128';
 Port_OHP='8787';
 cd
-wget -qO /usr/local/bin/ohp "http://gitlab.mzyaddy.ganteng.tech/ohp"
+wget -qO /usr/local/bin/ohp "https://raw.githubusercontent.com/mousethain/d/main/ohp"
 chmod +x /usr/local/bin/ohp
 cat > /etc/openvpn/client-tcp-ohp1194.ovpn <<END
 #http-proxy ${domain} 8787
 ############## WELCOME ###############
-############# By Yaddykakkoii Magelang ##############
+############# By mousevpn ##############
 client
 dev tun
 proto tcp
@@ -86,4 +86,4 @@ echo ""
 echo -e "${GREEN}Done Installing OHP Server${NC}"
 echo -e "Port OVPN OHP TCP: $Port_OHP"
 echo -e "Link Download OVPN OHP: http://$MYIP:81/client-tcp-ohp1194.ovpn"
-echo -e "Yaddy Kakkoii Magelang"
+echo -e "mousevpn"
