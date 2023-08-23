@@ -1,7 +1,7 @@
 #!/bin/bash
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
-#Decrypted By YADDY D PHREAKER
+#mousevpn
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -184,10 +184,10 @@ source /etc/os-release
     fi
 }
 function membuatfolder() {
-mkdir -p /etc/yaddykakkoii
-mkdir -p /etc/yaddykakkoii/theme
-mkdir -p /var/lib/yaddykakkoii >/dev/null 2>&1
-echo "IP=" >> /var/lib/yaddykakkoii/ipvps.conf
+mkdir -p /etc/mousevpnnn
+mkdir -p /etc/mousevpn/tema
+mkdir -p /var/lib/mousevpnn >/dev/null 2>&1
+echo "IP=" >> /var/lib/mousevpn/ipvps.conf
 mkdir -p /usr/bin/xray
 mkdir -p /etc/xray
 mkdir -p /etc/udp
@@ -247,49 +247,49 @@ mkdir -p /etc/yaddykakkoiisugoitensai/cache/vmess-ws-orbit1
 }
 
 function fixtema(){
-rm -rf /etc/yaddykakkoii/theme > /dev/null 2>&1
-    if [ -f "/etc/yaddykakkoii/theme/blue" ]; then
+rm -rf /etc/mousevpn/tema > /dev/null 2>&1
+    if [ -f "/etc/mousevpn/tema/blue" ]; then
         #echo "sudah ada tema, mulai proses over write"
-        rm -rf /etc/yaddykakkoii/theme
-        mkdir -p /etc/yaddykakkoii
-        mkdir -p /etc/yaddykakkoii/theme
+        rm -rf /etc/mousevpn/tema
+        mkdir -p /etc/mousevpn
+        mkdir -p /etc/mousevpn/tema
     else
         #echo "belum ada tema njuk create folder tema"
-        mkdir -p /etc/yaddykakkoii
-        mkdir -p /etc/yaddykakkoii/theme
+        mkdir -p /etc/mousevpn
+        mkdir -p /etc/mousevpn/tema
     fi
 #THEME RED
-cat <<EOF>> /etc/yaddykakkoii/theme/red
+cat <<EOF>> /etc/mousevpn/tema/red
 BG : \E[40;1;41m
 TEXT : \033[0;31m
 EOF
 #THEME BLUE
-cat <<EOF>> /etc/yaddykakkoii/theme/blue
+cat <<EOF>> /etc/mousevpn/tema/blue
 BG : \E[40;1;44m
 TEXT : \033[0;34m
 EOF
 #THEME GREEN
-cat <<EOF>> /etc/yaddykakkoii/theme/green
+cat <<EOF>> /etc/mousevpn/tema/green
 BG : \E[40;1;42m
 TEXT : \033[0;32m
 EOF
 #THEME YELLOW
-cat <<EOF>> /etc/yaddykakkoii/theme/yellow
+cat <<EOF>> /etc/mousevpn/tema/yellow
 BG : \E[40;1;43m
 TEXT : \033[0;33m
 EOF
 #THEME MAGENTA
-cat <<EOF>> /etc/yaddykakkoii/theme/magenta
+cat <<EOF>> /etc/mousevpn/tema/magenta
 BG : \E[40;1;43m
 TEXT : \033[0;33m
 EOF
 #THEME CYAN
-cat <<EOF>> /etc/yaddykakkoii/theme/cyan
+cat <<EOF>> /etc/mousevpn/tema/cyan
 BG : \E[40;1;46m
 TEXT : \033[0;36m
 EOF
 #THEME CONFIG
-cat <<EOF>> /etc/yaddykakkoii/theme/color.conf
+cat <<EOF>> /etc/mousevpn/tema/color.conf
 blue
 EOF
 }
@@ -322,7 +322,7 @@ netfilter-persistent reload
 cat> /etc/issue.net.txt << END
 <br>
 <font color="blue"><b>===============================</br></font><br>
-<font color="red"><b>********  Yaddy Kakkoii  ********</b></font><br>
+<font color="red"><b>********  mousevpn  ********</b></font><br>
 <font color="blue"><b>===============================</br></font><br>
 END
 }
