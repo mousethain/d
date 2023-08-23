@@ -7,7 +7,7 @@ cd
 #wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/moisethain/d/main/openssh-socket.py
 wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/moisethain/d/main/dropbear-ws.py
 wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/moisethain/d/main/ws-stunnel
-#wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/moisethain/d/main/ws-ovpn.service && chmod +x /usr/local/bin/ws-ovpn.service
+#wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/moisethain/d/main/ws-ovpn.py && chmod +x /usr/local/bin/ws-ovpn.py
 
 #izin permision
 #chmod +x /usr/local/bin/ws-openssh
@@ -20,13 +20,13 @@ chmod +x /usr/local/bin/ws-stunnel
 #wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/moisethain/d/main/ws-openssh.service && chmod +x /etc/systemd/system/ws-openssh.service
 
 #System Dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/ALVIICELL/1/main/sshws/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/moisethain/d/main/ws-dropbear.service && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System SSL/TLS Websocket-SSH Python
 wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/ALVIICELL/1/main/sshws/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
 
 ##System Websocket-OpenVPN Python
-#wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/${GitUser}/test1/${namafolder}/main/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
+#wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/moisethain/d/main/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
 
 #restart service
 #
