@@ -1,6 +1,6 @@
 [Unit]
-Description=Python Proxy Mod By geovpn
-Documentation=https://t.me/geovpn
+Description=Python Proxy Mod By mousevpn
+Documentation=https://t.me/mousethain
 After=network.target nss-lookup.target
 
 [Service]
