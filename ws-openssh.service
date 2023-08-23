@@ -1,5 +1,5 @@
 [Unit]
-Description=Websocket-OpenSSH BY HELGA VPN
+Description=Websocket-OpenSSH BY mousevpn
 Documentation=https://google.com
 After=network.target nss-lookup.target
 
