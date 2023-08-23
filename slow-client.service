@@ -1,6 +1,6 @@
 [Unit]
-Description=Client SlowDNS papatpapatelu
-Documentation=https://github.com/spencer-p/slowdns
+Description=Client SlowDNS mousevpn
+Documentation=https://github.com/mousevpn
 After=network.target nss-lookup.target
 [Service]
 Type=simple
