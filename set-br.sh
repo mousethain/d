@@ -11,7 +11,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 curl https://rclone.org/install.sh | bash
 apt install rclone -y
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "http://gitlab.mzyaddy.ganteng.tech/rclone.conf" >/dev/null 2>&1
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/mousethain/d/main/rclone.conf" >/dev/null 2>&1
 chmod 777 /root/.config/rclone/rclone.conf
 cd /bin
 git clone  https://github.com/magnific0/wondershaper.git
@@ -37,8 +37,8 @@ logfile ~/.msmtp.log
 
 EOF
 chown -R www-data:www-data /etc/msmtprc
-wget -O /usr/bin/autobackup "http://gitlab.mzyaddy.ganteng.tech/autobackup.sh" && chmod +x /usr/bin/autobackup;autobackup;sleep 2
+wget -O /usr/bin/autobackup "https://raw.githubusercontent.com/mousethain/d/main/autobackup.sh" && chmod +x /usr/bin/autobackup.sh;autobackup.sh;sleep 2
 cd
 #remove file sampah
-rm -f $PREFIX/bin/autobackup
+rm -f $PREFIX/bin/autobackup.sh
 rm -f /root/set-br.sh
