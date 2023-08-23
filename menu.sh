@@ -24,12 +24,12 @@ trx=$(grep -c -E "^#! " "/etc/xray/config.json")
 let jumlahakuntrojan=$trx/2
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let jumlahakunshadowsock=$ssx/2
-colornow=$(cat /etc/yaddykakkoii/tema/color.conf)
+colornow=$(cat /etc/mousevpn/tema/color.conf)
 export NC="\e[0m"
 export YELLOW='\033[0;33m';
 export RED="\033[0;31m" 
-export COLOR1="$(cat /etc/yaddykakkoii/tema/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
-export COLBG1="$(cat /etc/yaddykakkoii/tema/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
+export COLOR1="$(cat /etc/mousevpn/tema/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+export COLBG1="$(cat /etc/mousevpn/tema/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
 WH='\033[1;37m'                   
 ###########- Yaddy Kakkoii-##########
 tram=$( free -h | awk 'NR==2 {print $2}' )
