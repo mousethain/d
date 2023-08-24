@@ -1,4 +1,4 @@
-#!/bin/bash
+.#!/bin/bash
 #
 # Auto install latest kernel for TCP BBR
 #
