@@ -187,7 +187,7 @@ function membuatfolder() {
 mkdir -p /etc/mousevpntema
 mkdir -p /etc/mousevpntema/tema
 mkdir -p /var/lib/mousevpnip >/dev/null 2>&1
-echo "IP=" >> /var/lib/mousevpn/ipvps.conf
+echo "IP=" >> /var/lib/mousevpnip/ipvps.conf
 mkdir -p /usr/bin/xray
 mkdir -p /etc/xray
 mkdir -p /etc/udp
