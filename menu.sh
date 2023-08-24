@@ -24,7 +24,7 @@ trx=$(grep -c -E "^#! " "/etc/xray/config.json")
 let jumlahakuntrojan=$trx/2
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let jumlahakunshadowsock=$ssx/2
-colornow=$(cat /etc/mousevpn/tema/color.conf)
+colornow=$(cat /etc/mousevpntema/tema/color.conf)
 export NC="\e[0m"
 export YELLOW='\033[0;33m';
 export RED="\033[0;31m" 
@@ -41,8 +41,8 @@ export GREEN='\033[0;32m'
 # status
 #echo "$date" > /root/status
 #rm -f /root/status
-statushariini=$( curl -sS https://raw.githubusercontent.com/moisethain/d/main/statushariini)
-#wget -q -O /root/status "https://raw.githubusercontent.com/moisethain/d/main/statushariini"
+statushariini=$( curl -sS https://raw.githubusercontent.com/mousethain/d/main/statushariini)
+#wget -q -O /root/status "https://raw.githubusercontent.com/mousethain/d/main/statushariini"
 # usage
 vnstat_profile=$(vnstat | sed -n '3p' | awk '{print $1}' | grep -o '[^:]*')
 vnstat -i ${vnstat_profile} >/root/t1
@@ -220,7 +220,7 @@ echo -e "$COLOR1 $NC ${WH}License     ${COLOR1}: ${WH}LifeTime 😁 ${NC}"
 echo -e "$COLOR1 $NC ${WH}Developer   ${COLOR1}: ${WH}mousevpn ${NC}"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘$NC"
 echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}             ${WH}• MZ YADDY KAKKOII 2027 •${NC}                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}             ${WH}• mousevpn •${NC}                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -ne " ${WH}Note ${COLOR1}: 🍁 ${WH}"
