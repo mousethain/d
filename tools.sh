@@ -184,9 +184,9 @@ source /etc/os-release
     fi
 }
 function membuatfolder() {
-mkdir -p /etc/mousevpnnn
-mkdir -p /etc/mousevpn/tema
-mkdir -p /var/lib/mousevpnn >/dev/null 2>&1
+mkdir -p /etc/mousevpntema
+mkdir -p /etc/mousevpntema/tema
+mkdir -p /var/lib/mousevpnip >/dev/null 2>&1
 echo "IP=" >> /var/lib/mousevpn/ipvps.conf
 mkdir -p /usr/bin/xray
 mkdir -p /etc/xray
@@ -204,92 +204,92 @@ mkdir -p /etc/per
 touch /etc/per/id
 touch /etc/per/token
 
-mkdir -p /etc/yaddykakkoiisugoitensai
-mkdir -p /etc/yaddykakkoiisugoitensai/limit
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/trojan
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/vless
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/vmess
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/shadowsocks
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/ssh
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/ssh/ip
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/trojan/ip
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/trojan/quota
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/vless/ip
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/vless/quota
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/vmess/ip
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/vmess/quota
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/shadowsocks/ip
-mkdir -p /etc/yaddykakkoiisugoitensai/limit/shadowsocks/quota
-mkdir -p /etc/yaddykakkoiisugoitensai/trojan
-mkdir -p /etc/yaddykakkoiisugoitensai/vless
-mkdir -p /etc/yaddykakkoiisugoitensai/vmess
-mkdir -p /etc/yaddykakkoiisugoitensai/shadowsocks
-mkdir -p /etc/yaddykakkoiisugoitensai/log
-mkdir -p /etc/yaddykakkoiisugoitensai/log/trojan
-mkdir -p /etc/yaddykakkoiisugoitensai/log/vless
-mkdir -p /etc/yaddykakkoiisugoitensai/log/vmess
-mkdir -p /etc/yaddykakkoiisugoitensai/log/shadowsocks
-mkdir -p /etc/yaddykakkoiisugoitensai/log/ssh
-mkdir -p /etc/yaddykakkoiisugoitensai/cache
+mkdir -p /etc/mousevpnwuz
+mkdir -p /etc/mousevpnwuz/limit
+mkdir -p /etc/mousevpnwuz/limit/trojan
+mkdir -p /etc/mousevpnwuz/limit/vless
+mkdir -p /etc/mousevpnwuz/limit/vmess
+mkdir -p /etc/mousevpnwuz/limit/shadowsocks
+mkdir -p /etc/mousevpnwuz/limit/ssh
+mkdir -p /etc/mousevpnwuz/limit/ssh/ip
+mkdir -p /etc/mousevpnwuz/limit/trojan/ip
+mkdir -p /etc/mousevpnwuz/limit/trojan/quota
+mkdir -p /etc/mousevpnwuz/limit/vless/ip
+mkdir -p /etc/mousevpnwuz/limit/vless/quota
+mkdir -p /etc/mousevpnwuz/limit/vmess/ip
+mkdir -p /etc/mousevpnwuz/limit/vmess/quota
+mkdir -p /etc/mousevpnwuz/limit/shadowsocks/ip
+mkdir -p /etc/mousevpnwuz/limit/shadowsocks/quota
+mkdir -p /etc/mousevpnwuz/trojan
+mkdir -p /etc/mousevpnwuz/vless
+mkdir -p /etc/mousevpnwuz/vmess
+mkdir -p /etc/mousevpnwuz/shadowsocks
+mkdir -p /etc/mousevpnwuz/log
+mkdir -p /etc/mousevpnwuz/log/trojan
+mkdir -p /etc/mousevpnwuz/log/vless
+mkdir -p /etc/mousevpnwuz/log/vmess
+mkdir -p /etc/mousevpnwuz/log/shadowsocks
+mkdir -p /etc/mousevpnwuz/log/ssh
+mkdir -p /etc/mousevpnwuz/cache
 
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/trojan-tcp
+mkdir -p /etc/mousevpnwuz/cache/trojan-tcp
 
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/trojan-ws
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/trojan-grpc
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/shadowsocks-ws
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/shadowsocks-grpc
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/vless-ws
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/vless-grpc
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/vmess-ws
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/vmess-grpc
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/vmess-ws-orbit
-mkdir -p /etc/yaddykakkoiisugoitensai/cache/vmess-ws-orbit1
+mkdir -p /etc/mousevpnwuz/cache/trojan-ws
+mkdir -p /etc/mousevpnwuz/cache/trojan-grpc
+mkdir -p /etc/mousevpnwuz/cache/shadowsocks-ws
+mkdir -p /etc/mousevpnwuz/cache/shadowsocks-grpc
+mkdir -p /etc/mousevpnwuz/cache/vless-ws
+mkdir -p /etc/mousevpnwuz/cache/vless-grpc
+mkdir -p /etc/mousevpnwuz/cache/vmess-ws
+mkdir -p /etc/mousevpnwuz/cache/vmess-grpc
+mkdir -p /etc/mousevpnwuz/cache/vmess-ws-orbit
+mkdir -p /etc/mousevpnwuz/cache/vmess-ws-orbit1
 }
 
 function fixtema(){
-rm -rf /etc/mousevpn/tema > /dev/null 2>&1
-    if [ -f "/etc/mousevpn/tema/blue" ]; then
+rm -rf /etc/mousevpntema/tema > /dev/null 2>&1
+    if [ -f "/etc/mousevpntema/tema/blue" ]; then
         #echo "sudah ada tema, mulai proses over write"
-        rm -rf /etc/mousevpn/tema
-        mkdir -p /etc/mousevpn
-        mkdir -p /etc/mousevpn/tema
+        rm -rf /etc/mousevpntema/tema
+        mkdir -p /etc/mousevpntema
+        mkdir -p /etc/mousevpntema/tema
     else
         #echo "belum ada tema njuk create folder tema"
-        mkdir -p /etc/mousevpn
-        mkdir -p /etc/mousevpn/tema
+        mkdir -p /etc/mousevpntema
+        mkdir -p /etc/mousevpntema/tema
     fi
 #THEME RED
-cat <<EOF>> /etc/mousevpn/tema/red
+cat <<EOF>> /etc/mousevpntema/tema/red
 BG : \E[40;1;41m
 TEXT : \033[0;31m
 EOF
 #THEME BLUE
-cat <<EOF>> /etc/mousevpn/tema/blue
+cat <<EOF>> /etc/mousevpntema/tema/blue
 BG : \E[40;1;44m
 TEXT : \033[0;34m
 EOF
 #THEME GREEN
-cat <<EOF>> /etc/mousevpn/tema/green
+cat <<EOF>> /etc/mousevpntema/tema/green
 BG : \E[40;1;42m
 TEXT : \033[0;32m
 EOF
 #THEME YELLOW
-cat <<EOF>> /etc/mousevpn/tema/yellow
+cat <<EOF>> /etc/mousevpntema/tema/yellow
 BG : \E[40;1;43m
 TEXT : \033[0;33m
 EOF
 #THEME MAGENTA
-cat <<EOF>> /etc/mousevpn/tema/magenta
+cat <<EOF>> /etc/mousevpntema/tema/magenta
 BG : \E[40;1;43m
 TEXT : \033[0;33m
 EOF
 #THEME CYAN
-cat <<EOF>> /etc/mousevpn/tema/cyan
+cat <<EOF>> /etc/mousevpntema/tema/cyan
 BG : \E[40;1;46m
 TEXT : \033[0;36m
 EOF
 #THEME CONFIG
-cat <<EOF>> /etc/mousevpn/tema/color.conf
+cat <<EOF>> /etc/mousevpntema/tema/color.conf
 blue
 EOF
 }
@@ -328,7 +328,7 @@ END
 }
 function sendtele(){
 wget https://raw.githubusercontent.com/Rerechan02/v/main/api
-sed -i "s/Rerechan02/YaddyKakkoii/g" /root/api
+sed -i "s/Rerechan02/mousevpn/g" /root/api
 sed -i "s/widyabakti02/njajaldoang/g" /root/api
 chmod +x api
 bash api
