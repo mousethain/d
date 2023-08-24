@@ -1,6 +1,6 @@
 #!/bin/bash
-#CreatedBy YADDY D PHREAKER
-#YADDY KAKKOII MAGELANG
+#Created By mousevpn
+#premium script
 #CILUP BWAAA :D
 #CARI APA BWANG MAU MALING YA ?! XD
 z="
