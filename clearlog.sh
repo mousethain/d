@@ -1,6 +1,6 @@
 #!/bin/bash
 BLUE='\033[0;34m'
-#Decrypted By YADDY D PHREAKER
+#script premium mousevpn
 data=($(find /var/log/ -name '*.log'))
 for log in "${data[@]}"; do
 echo -e " ${BLUE} $log clear"
