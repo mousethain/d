@@ -24,14 +24,14 @@ echo ""
 read -rp "silakan INPUT custom subdomain kamu : " -e SUB
 echo ""
 MYIP=$(wget -qO- icanhazip.com);
-CF_ID=yadicakepp@gmail.com
+CF_ID=mousethain@gmail.com
 CF_KEY=b22d286c2d7f6d3e5073325dd18b76ca4ddb2
-DOMAIN=sshweb.tech
+DOMAIN=mousevpn.site
 SUB_DOMAIN=${SUB}.${DOMAIN}
 NS_DOMAIN=ns.${SUB_DOMAIN}
 echo "DOMAIN kamu adalah : ${SUB_DOMAIN}"
 sleep 3
-echo "IP=${SUB_DOMAIN}" > /var/lib/mousevpn/ipvps.conf
+echo "IP=${SUB_DOMAIN}" > /var/lib/mousevpnip/ipvps.conf
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS RECORD (DomainNameSystem) for ${SUB_DOMAIN} "
@@ -98,7 +98,7 @@ SUB_DOMAIN=tensai.${SUB}.${DOMAIN}
 NS_DOMAIN=ns.${SUB_DOMAIN}
 echo "DOMAIN kamu adalah : ${SUB_DOMAIN}"
 sleep 3
-echo "IP=${SUB_DOMAIN}" > /var/lib/mousevpn/ipvps.conf
+echo "IP=${SUB_DOMAIN}" > /var/lib/mousevpnip/ipvps.conf
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 # update domain vps mu
@@ -186,7 +186,7 @@ echo ""
             randomsubdomain
         else
 	        echo "$domainmu" > /etc/xray/domain
-            echo "IP=$domainmu" > /var/lib/mousevpn/ipvps.conf
+            echo "IP=$domainmu" > /var/lib/mousevpnip/ipvps.conf
         fi
         clear
     elif [[ $host == "2" ]]; then
