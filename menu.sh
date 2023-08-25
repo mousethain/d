@@ -28,8 +28,8 @@ colornow=$(cat /etc/mousevpntema/tema/color.conf)
 export NC="\e[0m"
 export YELLOW='\033[0;33m';
 export RED="\033[0;31m" 
-export COLOR1="$(cat /etc/mousevpn/tema/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
-export COLBG1="$(cat /etc/mousevpn/tema/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
+export COLOR1="$(cat /etc/mousevpntema/tema/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+export COLBG1="$(cat /etc/mousevpntema/tema/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
 WH='\033[1;37m'                   
 ###########- mousevpn -##########
 tram=$( free -h | awk 'NR==2 {print $2}' )
@@ -160,7 +160,7 @@ upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
 uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
 cekup=`uptime -p | grep -ow "day"`
 IPVPS=$(curl -s ipinfo.io/ip )
-serverVersion=$( curl -sS https://raw.githubusercontent.com/moisethain/d/main/versinew)
+serverVersion=$( curl -sS https://raw.githubusercontent.com/mousethain/d/main/versinew)
 #echo -e "$COLOR1 $NC ${WH}Public Key     ${COLOR1}: ${WH}$(cat /etc/slowdns/server.pub)"
 uis="${COLOR1}Premium Version$NC"
 echo -e "$COLOR1 $NC ${WH}User Roles     ${COLOR1}: ${WH}$uis"
