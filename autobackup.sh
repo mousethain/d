@@ -267,7 +267,7 @@ echo "
 <b>ISP</b>       : <code>${ISP}</code>
 <code>────────────────────</code>
 <i>Automatic Notification from</i>
-<i>Github Yaddy Kakkoii</i>
+<i>mousevpn</i>
 " | mail -s "Auto Backup c" ${emailtujuan}
 }
 ema
