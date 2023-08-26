@@ -60,12 +60,12 @@ echo "ini vps debian"
 OS=$ID # debian or ubuntu
 #apt install -y nginx certbot
 sleep 3s
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt dist-upgrade -y
+apt update -y
+apt upgrade -y
+apt dist-upgrade -y
 update-grub
-sudo apt-get remove --purge ufw firewalld -y
-sudo apt-get remove --purge exim4 -y
+apt-get remove --purge ufw firewalld -y
+apt-get remove --purge exim4 -y
 apt install sysstat -y
 apt -y install shc
 apt install figlet -y
@@ -84,16 +84,16 @@ apt install -y sudo net-tools gnutls-bin neofetch vnstat uuid
 apt install -y pwgen php jq git curl wget
 apt install -y mlocate dh-make libaudit-dev build-essential
 apt install -y bzip2 gzip coreutils screen unzip
-sudo apt install -y screen curl jq bzip2 gzip coreutils rsyslog iftop \
+apt install -y screen curl jq bzip2 gzip coreutils rsyslog iftop \
 htop zip unzip net-tools sed gnupg gnupg1 \
 bc sudo apt-transport-https build-essential dirmngr libxml-parser-perl neofetch screenfetch git lsof \
 openssl openvpn easy-rsa fail2ban tmux \
 stunnel4 vnstat squid3 \
 dropbear  libsqlite3-dev \
-socat cron bash-completion ntpdate xz-utils sudo apt-transport-https \
+socat cron bash-completion ntpdate xz-utils apt-transport-https \
 gnupg2 dnsutils lsb-release chrony
 curl -sSL https://deb.nodesource.com/setup_16.x | bash -
-sudo apt-get install nodejs -y
+apt-get install nodejs -y
 /etc/init.d/vnstat restart
 wget -q https://humdi.net/vnstat/vnstat-2.6.tar.gz
 tar zxvf vnstat-2.6.tar.gz
@@ -107,7 +107,7 @@ systemctl enable vnstat
 /etc/init.d/vnstat restart
 rm -f /root/vnstat-2.6.tar.gz >/dev/null 2>&1
 rm -rf /root/vnstat-2.6 >/dev/null 2>&1
-sudo apt install -y libnss3-dev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison make libnss3-tools libevent-dev xl2tpd pptpd
+apt install -y libnss3-dev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison make libnss3-tools libevent-dev xl2tpd pptpd
 clear
 }
 function alatubuntu() {
@@ -137,16 +137,16 @@ apt-get install -y sudo net-tools gnutls-bin neofetch vnstat uuid
 apt-get install -y pwgen php jq git curl wget
 apt-get install -y mlocate dh-make libaudit-dev build-essential
 apt-get install -y bzip2 gzip coreutils screen unzip
-sudo apt-get install -y screen curl jq bzip2 gzip coreutils rsyslog iftop \
+apt-get install -y screen curl jq bzip2 gzip coreutils rsyslog iftop \
 htop zip unzip net-tools sed gnupg gnupg1 \
-bc sudo apt-transport-https build-essential dirmngr libxml-parser-perl neofetch screenfetch git lsof \
+bc apt-transport-https build-essential dirmngr libxml-parser-perl neofetch screenfetch git lsof \
 openssl openvpn easy-rsa fail2ban tmux \
 stunnel4 vnstat squid3 \
 dropbear  libsqlite3-dev \
-socat cron bash-completion ntpdate xz-utils sudo apt-transport-https \
+socat cron bash-completion ntpdate xz-utils apt-transport-https \
 gnupg2 dnsutils lsb-release chrony
 curl -sSL https://deb.nodesource.com/setup_16.x | bash - 
-sudo apt-get install nodejs -y
+apt-get install nodejs -y
 /etc/init.d/vnstat restart
 wget -q https://humdi.net/vnstat/vnstat-2.6.tar.gz
 tar zxvf vnstat-2.6.tar.gz
@@ -160,7 +160,7 @@ systemctl enable vnstat
 /etc/init.d/vnstat restart
 rm -f /root/vnstat-2.6.tar.gz >/dev/null 2>&1
 rm -rf /root/vnstat-2.6 >/dev/null 2>&1
-sudo apt-get install -y libnss3-dev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison make libnss3-tools libevent-dev xl2tpd pptpd
+apt-get install -y libnss3-dev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison make libnss3-tools libevent-dev xl2tpd pptpd
 clear
 }
 function SystemOperasi(){
